@@ -1,4 +1,4 @@
-Q1) Write a java code with the class named ‘acad’ and a method ‘main’. Hardcode the program
+Q1) Write a java code with the class named â€˜acadâ€™ and a method â€˜mainâ€™. Hardcode the program
 with two integers and print the sum of those two.
 
 import java.util.*;
@@ -68,17 +68,17 @@ System.out.println(a);
 }
 
 Q5) Joe is scared to go to school. When her dad asked the reason, Joe said she is unable to complete
-the task given by her teacher. The task was to find the “first 10 multiples” of the number entered
+the task given by her teacher. The task was to find the â€œfirst 10 multiplesâ€ of the number entered
 from stdin.
 Example:
 Input: 3
 O/p:
 3 x 1 = 3
 3 x 2 = 6
-………
-………
-…….
-….
+â€¦â€¦â€¦
+â€¦â€¦â€¦
+â€¦â€¦.
+â€¦.
 3 x 10 = 30
 Help Joe in completing the task!
 
@@ -127,31 +127,30 @@ sum(i,j);
 
 Q7) Can you overload a method with the same return type? Explain your answer with proper logic.
 
-No, we cannot overload methods based on return-type alone because the following is not valid->
-public class SomeClass
+No, we cannot overload methods based on same return-type because its not valid
+public class NameFunction
 {
-    public int GetValue() 
+    public int GetName() 
     { 
-     return 1; 
+     return 100; 
     }
-    public String GetValue() 
+    public String GetName() 
     { 
-     return "abc"; 
+     return "name"; 
     }
 }
-But we can overload the number of parameters and their type and hence the following are all valid->
-public void DoSomething(int value) 
+But we can overload the parameters and their type because its valid
+public void Naming(int choice)
 { 
 }
-public void DoSomething(string value) 
+public void Naming(string choice) 
 { 
 }
-public void DoSomething(int value, string value) 
+public void Naming(int choice, string choice) 
 { 
 }
-Hence we can vary the return type of these methods->methods cannot only be overloaded based on their return type alone but they can also differ if their parameter lists are different.
-We can overload with same return type but the type of arguments should differ.
-If return type as well as arguments are of same type in different functions, then it cannot be overloaded.
+
+Therefore methods cannot be overloaded based on same return type but they can be overloaded based on the parameters and their types.
 
 Q8) Write a program in java using Arrays that sorts the element in descending order.
 
